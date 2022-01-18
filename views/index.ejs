@@ -39,7 +39,7 @@
             <% shortUrls.forEach(shortUrl => { %>
               <tr>
                 <td><a  target="_" href="<%= shortUrl.full %>"><%= shortUrl.full %></a></td>
-                <td><a  target="_" href="<%= shortUrl.short %>"><%= shortUrl.short %></a></td>
+                <td><a  target="_" href="<%= shortUrl.short %>">https://url-shortener17.herokuapp.com/<%= shortUrl.short %></a></td>
                 <td><%= shortUrl.clicks %></td>
                 <td><a href="delete/<%= shortUrl.id %>" class="btn btn-primary">Delete</a></td>
               </tr>
